@@ -1,0 +1,430 @@
+html, body {
+	max-width: 100%;  
+	overflow-x: clip;
+    height: auto;
+}
+.bg-dark,.navbar-dark {
+	background-color: black !important;
+}
+.navbar-brand div {
+		background-image: url("resumepics/r2.png");
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		height: 5rem;
+		width: 6rem;
+		display: inline-block;
+		margin: -1.5rem;
+		margin-top: 0rem;
+	}
+.navbar-nav a:hover {
+	transition: 0.3s;
+	border-bottom: 3px solid orange;
+}
+@media (min-width: 992px) {
+	.navbar-nav {
+    
+    margin:0 auto;
+    display: block;
+    text-align: center;
+	}
+
+	.navbar-nav > li {
+    display: inline-block;
+   
+	}
+
+}
+@media screen and (max-width: 900px) {
+
+	#profilepic{
+		transform: scale(0.8);
+	}
+	#glider {
+		left: 10% !important;
+		border-width: 0.2rem !important;
+	}
+	#seneca,#twelve,#ryan {
+		left: 28% !important;
+	}
+	#flex-ed>div::after {
+		right: 0% !important;
+		left: -49% !important;
+	}
+}
+@keyframes flash {
+	from {
+
+	}
+	to {
+		background-image: none;
+		background-color: rgba(255,0,0,0.6);
+		
+	}
+}
+
+#skills:target, #education:target, #projects:target, #contactme:target {
+	animation: flash 0.5s ease-in-out 2 alternate;
+	/*background-color: orangered;*/
+}
+#head {
+
+	background-image: url("resumepics/bg.jpeg");
+	background-repeat: no no-repeat;
+	background-size: contain;
+	height: auto;
+	width: 100vw;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -20px;
+	background-attachment: fixed;
+	opacity: 0.94;
+	position: relative;
+	
+	
+}
+
+
+#socials {
+	margin-top:2rem ;
+	height: 80%;
+	width: 100%;
+}
+#my-name {
+	height: 50%;
+	text-align: center;
+	margin: auto;
+	color: white;
+	letter-spacing: 0.6rem;
+	font-family: serif;
+	font-size: 50px;
+	font-weight: bolder;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+
+}
+
+
+#handles {
+	margin-top: 3rem;
+	margin-bottom: 6.5rem;
+}
+
+#handles div{
+	
+	height: 2.7rem;
+	width: 2.7rem;
+	display: inline-block;
+	
+	padding-left: 0.625rem;
+	padding-right:0.625rem;;
+	margin-left: 0.75rem;
+	margin-right: 0.75rem;
+	
+}
+#insta:hover {
+	opacity: 0.5;
+	
+}
+#github:hover {
+	opacity: 0.5;
+	
+}
+#linkedin:hover {
+	opacity: 0.5;
+	
+}
+#google:hover {
+	opacity: 0.5;
+	
+}
+#insta {
+	background-image: url("resumepics/download.png");
+    background-color: transparent;
+	
+}
+#github {
+	background-image: url("resumepics/gthub.png");
+}
+#linkedin {
+	background-image: url("resumepics/ln.jpg");
+}
+#google {
+	position: static;
+	
+	background-image: url("resumepics/google.png");
+
+}
+#insta,#github,#linkedin,#google {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+
+
+#profilepic {
+	
+	position: relative;
+	display: flex;
+	margin: auto;
+	margin-top: -4rem;
+	height: 15rem;
+	width: 15rem;
+	border-radius: 50%;
+	border-width: 6px;
+	border-style: solid;
+	border-color: black;
+	background-image: url("resumepics/khush.jpg");
+	background-position: center;
+	background-size: cover;
+	margin-bottom: 2rem;
+	
+
+}
+#aboutme {
+	display: block;
+	
+	margin: auto;
+	width: 50vw;
+	text-align: center;
+	line-height: 2rem;
+	word-spacing: 0.2rem;
+	font-weight: bolder;
+	font-size: 20px;
+}
+
+#skills,#projects,#education {
+	height: auto ;
+	width: 100vw;
+	background-image: linear-gradient(to bottom right,#a1ffce,#faffd1);
+	padding-bottom: 2rem;
+}
+
+#skills h1, #contactme h1, #projects h1, #education h1{
+	font-weight: bolder; color:black;  font-size: 2rem; padding: 2rem; font-family: sans-serif;
+	text-align: center;
+	height: 15%;
+	width: 30%;
+	margin: auto;
+	
+}
+
+#hard,#soft {
+	height: 85%;
+
+	box-sizing: border-box;
+	width: 48%;
+	margin: 0;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	overflow-wrap: break-word;
+	font-family: monospace;
+	font-size: 1.2rem;
+	font-weight: lighter;
+	line-height: 1.5rem;
+}
+
+#divider {
+	
+	width: 0;
+	border: 0.2rem solid black;
+	border-radius: 2rem;
+}
+
+
+#flex-ed {
+	position: relative;
+	max-height: 85%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
+	font-size: 1.2rem;
+}
+#seneca,#twelve,#ryan {
+	width: 40%;
+	height: auto;
+	margin: 5px;
+	overflow-wrap: break-word;
+	position: relative;
+
+
+}
+#flex-ed div:nth-child(2) {
+	left: 54%;
+}
+#glider {
+	height: 90%;
+	position: absolute;
+	left: 50%;
+	width: 0rem;
+	border: 0.3rem solid skyblue;
+
+	
+}
+#plane {
+	position: sticky;
+	top: 25%;
+	transform: scale(1.2) rotate(90deg);
+	z-index: 2;
+
+
+}
+
+#flex-ed>div:nth-child(2n+1)::after {
+	content: '';
+	position: absolute;
+	vertical-align: top;
+	border-radius: 50%;
+	width: 1rem;
+	height: 1rem;
+	background-color: grey;
+	z-index: 1;
+	top: 25%;
+	right: -26.3%;
+}
+
+
+#twelve::after {
+	content: '';
+	position: absolute;
+	vertical-align: top;
+	border-radius: 50%;
+	width: 1rem;
+	height: 1rem;
+	background-color: grey;
+	z-index: 1;
+	top: 25%;
+	left: -11.5%;
+}
+
+#flex-projects>div {
+	
+	min-height: 35%;
+	max-height: 35%;
+	width: 25%;
+	margin: 2rem;
+	background-color: white;
+	padding: 1rem;
+	font-family: monospace;overflow-wrap: break-word; text-align: center;
+	border: 0.125rem solid transparent;
+	border-radius: 1.3rem;
+	flex-shrink: 1;
+			
+}
+
+#flex-projects>div:hover {
+	transition: transform 0.3s;
+	transform: scale(1.11);
+}
+.projects-icon{
+	min-height: 7rem;
+	max-height: 7rem;
+	width: 100%;
+	background-color: transparent;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#flex-projects a {
+	font-family: serif; 
+	color: orange;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+#flex-projects a:hover{
+	color: orangered;
+}
+
+#contactme{
+	background-image: linear-gradient(to top right,#2857a4,#403066);
+	width: 100vw;
+	height: auto;
+}
+
+#flex-section,#flex-projects,#flex-skills {
+	display: flex;
+	height: auto;
+	width:100%;
+	justify-content: center;
+	flex-wrap: wrap;
+	/*padding:2rem ;*/
+
+
+	
+}
+
+
+
+#contact-form{
+	margin-right: 0.8rem;
+}
+#contact-icons{
+	margin-left: 0.8rem;
+}
+#contact-form, #contact-icons {
+	position: relative;
+	overflow-wrap: break-word;
+	height: 100%;
+	width: 40%;
+	
+	
+
+}
+.custominput {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background-color: transparent;
+	border-bottom: 2px solid orange;
+	padding: 0.5rem;
+	color: white;
+	font-size: 1rem;
+	overflow-x: scroll;
+}
+#contact-form input {
+	
+	height: 1.5rem;
+	width: 70%;
+	margin: auto;
+	
+	}
+#contact-form input:focus {
+	outline: none;
+}
+#contact-form textarea{
+		outline: none;
+		width: 70%;
+		height: 8rem;
+		margin: auto;
+}
+#contact-form button {
+	font-size: 1rem;
+	position: relative;
+	left: flex-end;
+	padding: 0.1rem;
+	background-color: white;
+	color: orange;
+	font-weight: bolder;
+	/*outline: none;*/
+	border: none;
+	border-radius: 0.4rem;
+	
+
+}
+.alignleft {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: left !important;
+    display: flex;
+    justify-content: center;
+}
+.radiooptions {
+    height:1.5rem !important;
+    margin: 0 1rem 0 1rem;
+	vertical-align:bottom;
+    width: auto !important;
+}
